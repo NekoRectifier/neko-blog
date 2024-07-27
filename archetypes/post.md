@@ -1,11 +1,11 @@
 ---
-title: "unnamed post"
-date: 2020-09-15T11:30:03+08:00
+date: '{{ .Date }}'
+draft: true
+title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
 # weight: 1
 # aliases: ["/first"]
 tags: []
 author: "NekoRect"
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false

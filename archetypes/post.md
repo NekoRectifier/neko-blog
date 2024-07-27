@@ -15,11 +15,11 @@ description: ""
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: false # to disable highlightjs
 disableShare: false
-hideSummary: false
+hideSummary: true
 searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
-ShowPostNavLinks: true
+# ShowPostNavLinks: false # at bottom nav to next or prev post, useless for blog
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false

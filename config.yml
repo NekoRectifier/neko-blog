@@ -90,7 +90,7 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON
+    - JSON # works with search
 
 params:
 # Global perfs
@@ -103,7 +103,7 @@ params:
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false # not good looking
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true

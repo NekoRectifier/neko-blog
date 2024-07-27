@@ -35,6 +35,10 @@ cover:
 #    appendFilePath: true # to append file path to Edit link
 ---
 
+最近切换到 Hugo 来了，原因 Hexo 在非 x86 平台的操作系统上部署体验过于繁琐，先是 nodejs 在通过 npm 下载 hexo 二进制文件。相比 Hugo 仅仅使用已经打包好了的二进制，Hexo 不得不说是输在了多平台的方便上。（本博文使用 AOSP Android 上的 Termux 运行的 code－server 完成）
+
+旧 blog 的内容将在近日开始迁移，不过考虑下从有想法到成功的 Hugo 页面部署所用的时间。我想迁移所需要的时间也不会少。
+
 # 常用命令
 
 1. 新建 post 页面

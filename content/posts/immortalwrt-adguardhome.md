@@ -1,10 +1,10 @@
 ---
 date: '2024-07-27T12:36:39Z'
-draft: true
+draft: false
 title: 'Immortalwrt 安装/配置 Adguardhome'
 # weight: 1
 # aliases: ["/first"]
-tags: []
+tags: ["OpenWRT", "Software"]
 author: "NekoRect"
 showToc: false
 TocOpen: false

@@ -1,6 +1,6 @@
 ---
 date: '{{ .Date }}'
-draft: true
+draft: true # remember to modify!
 title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
 # weight: 1
 # aliases: ["/first"]

@@ -3,8 +3,8 @@
 baseURL: "https://neko-blog.pages.dev/"
 # remember to change this
 title: neko-blog
-copyright: "© [NekoRect](https://t.me/NekoInductor"
-paginate: 4
+copyright: "© [NekoRect](https://t.me/NekoInductor)"
+paginate: 6
 theme: [hugo-PaperMod]
 
 enableInlineShortcodes: true
@@ -95,10 +95,8 @@ outputs:
 params:
 # Global perfs
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  description: "Personal digital life guide and tweaks sharing blog"
   author: NekoRect
-  # author: ["Me", "You"] # multiple authors
-
   defaultTheme: auto
   disableThemeToggle: false
   ShowShareButtons: false

@@ -1,6 +1,6 @@
 ---
 date: '2024-07-27T12:22:03Z'
-draft: true
+draft: false
 title: 'Hugo 常用命令与使用技巧'
 # weight: 1
 # aliases: ["/first"]

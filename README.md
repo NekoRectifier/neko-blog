@@ -1,14 +1,57 @@
-# hugo-PaperModX Example
+# hugo-paperMod Example
 
-This repository offers an example site for [hugo-PaperModX](https://github.com/reorx/hugo-PaperModX)
+This repository offers an example site for [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 
-The GitHub Pages site for this repo is at: https://reorx.github.io/papermodx-example/
+## Install
 
-## How to use
+Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
 
-1. Fork this repo
-2. Go to "Settings > Pages", select "GitHub Actions" for the "Source" dropdown
+## Directory Tree
 
-    ![](_readme_images/settings-pages.png)
-3. Go to "Actions", rerun the failed workflow
-4. Your site should be available at `https://$USERNAME.github.io/papermodx-example/`, you can also check the URL at `https://github.com/$USERNAME/papermodx-example/settings/pages`
+```
+.(site root)
+├── configTaxo.yml
+├── config.yml
+├── content
+│   ├── archives.fr.md
+│   ├── archives.md
+│   ├── posts
+│   │   ├── emoji-support.md
+│   │   ├── markdown-syntax.fa.md
+│   │   ├── markdown-syntax.fr.md
+│   │   ├── markdown-syntax.md
+│   │   ├── math-typesetting.md
+│   │   ├── papermod
+│   │   │   ├── _index.md
+│   │   │   ├── papermod-faq.md
+│   │   │   ├── papermod-features
+│   │   │   │   ├── images
+│   │   │   │   │   ├── homeinfo.jpg
+│   │   │   │   │   ├── profile.jpg
+│   │   │   │   │   └── regular.jpg
+│   │   │   │   └── index.md
+│   │   │   ├── papermod-icons.md
+│   │   │   ├── papermod-installation.md
+│   │   │   └── papermod-variables.md
+│   │   ├── placeholder-text.md
+│   │   └── rich-content.md
+│   ├── search.fr.md
+│   ├── search.md
+│   └── tags
+├── LICENSE
+├── README.md
+├── resources
+│   └── _gen
+│       ├── assets
+│       └── images
+├── static
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   └── papermod-cover.png
+└── themes
+    └── hugo-PaperMod
+```

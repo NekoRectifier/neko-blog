@@ -7,6 +7,7 @@ copyright: "© [NekoRect](https://t.me/NekoInductor)"
 paginate: 6
 theme: [hugo-PaperMod]
 
+hasCJKLanguage: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -129,8 +130,8 @@ params:
 
   homeInfoParams:
     Title: "随便写点"
-    # Content: >
-    #   👋 Welcome to demo page of Hugo's theme PaperMod!
+    Content: >
+      👋 之前的博客内容还没有迁移过来，暂且等着吧。
 
     #   - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
 

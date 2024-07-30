@@ -42,8 +42,7 @@ cover:
 # 常用命令
 
 1. 新建 post 页面
-  `hugo new content [path_of_post_file]` -k [archetype_name]
-  
+  `hugo new content [path_of_post_file]` -k [archetype_name]  
   示例：`hugo new content posts/[name].md -k post`
 
-2. 
+没了，想到哪里写哪里吧。

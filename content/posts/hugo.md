@@ -44,5 +44,6 @@ cover:
 1. 新建 post 页面
   `hugo new content [path_of_post_file]` -k [archetype_name]  
   示例：`hugo new content posts/[name].md -k post`
-
+  > “content” 也可以不用添加，直接写文件路径不会有区别。
+  
 没了，想到哪里写哪里吧。

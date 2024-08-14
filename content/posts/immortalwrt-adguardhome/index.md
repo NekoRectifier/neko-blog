@@ -45,32 +45,77 @@ cover:
 
 > 默认情况下 ImmortalWRT 已经设置了国内镜像源（Vsean），不需要手动换源。
 
-执行完成后，执行 `opkg install adguardhome` 进行 ADG 二进制文件的安装。二进制文件会被安装在 `/sr/bin/adguardhome`。
+执行完成后，执行 `opkg install adguardhome` 进行 ADG 二进制文件的安装。二进制文件会被安装在 `/usr/bin/adguardhome`。
 
 # 启动
 
-默认情况下，通过 `service` 命令控制 ADG 服务。可以仅执行 `service adguardhome` 查看可用执行。
+默认情况下，通过 `service` 命令控制 ADG 服务。可以仅执行 `service adguardhome` 查看可用命令。  
+当通过 opkg 安装完 ADG 二进制后，使用 `service` 查看系统中服务列表为：
 
-```bash
-service adguardhome enable # 激活（自启动）
-service adguardhome start # 启动
-service adguardhome status # 查看当前服务情况
+```plain
+root@CR6608_310:~# service
+Usage: service <service> [command]
+/etc/init.d/adguardhome            enabled         stopped
+/etc/init.d/boot                   enabled         stopped
+/etc/init.d/bootcount              enabled         stopped
+/etc/init.d/cron                   enabled         stopped
+/etc/init.d/dnsmasq                enabled         running
+/etc/init.d/done                   enabled         stopped
+/etc/init.d/dropbear               enabled         running
+/etc/init.d/firewall               enabled         stopped
+/etc/init.d/fstab                  enabled         stopped
+/etc/init.d/gpio_switch            enabled         stopped
+/etc/init.d/led                    enabled         stopped
+/etc/init.d/log                    enabled         running
+/etc/init.d/network                enabled         running
+/etc/init.d/odhcpd                 enabled         running
+/etc/init.d/openssl                enabled         stopped
+/etc/init.d/packet_steering        enabled         stopped
+/etc/init.d/radius                 enabled         stopped
+/etc/init.d/rpcd                   enabled         running
+/etc/init.d/sysctl                 enabled         stopped
+/etc/init.d/sysfixtime             enabled         stopped
+/etc/init.d/sysntpd                enabled         running
+/etc/init.d/system                 enabled         stopped
+/etc/init.d/ucitrack               enabled         stopped
+/etc/init.d/uhttpd                 enabled         running
+/etc/init.d/umount                 enabled         stopped
+/etc/init.d/urandom_seed           enabled         stopped
+/etc/init.d/urngd                  enabled         running
+/etc/init.d/wpad                   enabled         running
 ```
 
-在执行激活／启动命令后，`status` 命令应返回 `running`。如果检查发现 `adguardhome` 实际并未运行，则参考以下部分。
+可以看到 ADG 默认是已启用但是未运行的状态，一般来说可以通过 `service adguardhome start` 启动运行。 
 
-使用 nano 编辑 `/etc/config/adguardhome` 文件，更改 enabled 项的值为 1。具体参考以下内容：
+但是在执行启动命令后，`service adguardhome status` 命令应返回 `running`。如果检查发现 `adguardhome` 实际并未运行，且 `info` 输出为这样：
+
+```plain
+root@CR6608_310:~# service adguardhome info
+{
+        "adguardhome": {
+
+        }
+}
+```
+
+则编辑 `/etc/config/adguardhome` 文件，更改 “enabled” 值为 1。可参考以下内容：
 
 ```plain
 config adguardhome config
-        option enabled '1'
+        option enabled '1' # 已修改
         # Where to store persistent data by AdGuard Home
         option workdir /etc/ADG
 ```
 
 > 此处也推荐将 `workdir` 的默认值修改为其他路径，避免路由器断电重启后 ADG 数据丢失的问题。
 
-在更改完该配置文件后，再次使用 `service` 启用并启动 ADG。此时二进制文件应该正常启动并运行。
+在更改完该配置文件后，再次使用 `service` 启动 ADG 服务。此时二进制文件应该正常启动并运行。
+
+```plain
+# 启动结果
+root@CR6608_310:/# service adguardhome status
+running
+```
 
 # 配置
 

@@ -1,6 +1,6 @@
 ---
 date: '2024-07-30T05:54:18Z'
-draft: true # remember to modify!
+draft: false
 title: 'OpenWRT 配置 WDS 无线中继'
 # weight: 1
 # aliases: ["/first"]

@@ -4,7 +4,7 @@ baseURL: "https://neko-blog.pages.dev/"
 # remember to change this
 title: neko-blog
 copyright: "© [NekoRect](https://t.me/NekoInductor)"
-paginate: 6
+pagination.pagerSize: 6
 theme: [hugo-PaperMod]
 
 hasCJKLanguage: true

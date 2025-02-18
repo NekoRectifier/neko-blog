@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://neko-blog.pages.dev/tags/guide/</loc>
+    <lastmod>2024-07-27T12:22:03+00:00</lastmod>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/tags/hugo/</loc>
+    <lastmod>2024-07-27T12:22:03+00:00</lastmod>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/posts/hugo/</loc>
+    <lastmod>2024-07-27T12:22:03+00:00</lastmod>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/</loc>
+    <lastmod>2024-07-27T12:22:03+00:00</lastmod>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/posts/</loc>
+    <lastmod>2024-07-27T12:22:03+00:00</lastmod>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/tags/</loc>
+    <lastmod>2024-07-27T12:22:03+00:00</lastmod>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/archives/</loc>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/categories/</loc>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/search/</loc>
+  </url><url>
+    <loc>https://neko-blog.pages.dev/series/</loc>
+  </url>
+</urlset>

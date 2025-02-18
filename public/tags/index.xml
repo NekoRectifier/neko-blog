@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on neko-blog</title>
+    <link>https://neko-blog.pages.dev/tags/</link>
+    <description>Recent content in Tags on neko-blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© [NekoRect](https://t.me/NekoInductor)</copyright>
+    <lastBuildDate>Sat, 27 Jul 2024 12:22:03 +0000</lastBuildDate>
+    <atom:link href="https://neko-blog.pages.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide</title>
+      <link>https://neko-blog.pages.dev/tags/guide/</link>
+      <pubDate>Sat, 27 Jul 2024 12:22:03 +0000</pubDate>
+      <guid>https://neko-blog.pages.dev/tags/guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://neko-blog.pages.dev/tags/hugo/</link>
+      <pubDate>Sat, 27 Jul 2024 12:22:03 +0000</pubDate>
+      <guid>https://neko-blog.pages.dev/tags/hugo/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
